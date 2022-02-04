@@ -5,11 +5,10 @@ canvas.height = window.innerHeight;
 
 
 var c = canvas.getContext('2d');
-
 var x = Math.random() * innerWidth;
 //var y = Math.random() * innerHeight;
-var y = 500;
-var dx = document.getElementById("Range");    //   <- isn't fucking working           // Changes the speed of the object 
+var y = 700;
+var dx = +(document.getElementById("myRange").value);    //   <- isn't fucking working           // Changes the speed of the object 
 //var dy = (Math.random() - 0) * 8;
 var radius = 30;
 function animate() {
@@ -45,9 +44,10 @@ const slideValue = document.querySelector("span");
         slideValue.textContent = value;
         slideValue.style.left = (value/1) + "%";
         slideValue.classList.add("show");
+        dx = +value;
       });
       inputSlider.onblur = (()=>{
-        slideValue.classList.remove("show");
+      slideValue.classList.remove("show");
       });
 
     // Slider // 
