@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-<HTML LANG="EN">
-    <div> 
-        <meta charset="UTF-8">
-        <title>EMDR</title>
-        <link href="index.css" rel="stylesheet" type="text/css">
+<html lang="EN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EMDR</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
 
-        <div id="canvas-wrap">
-            <canvas></canvas>
-            <div class="wrapper">
-            <h1 id="overlay">Eye movement desensitization and reprocessing</h1>
+    <div id="canvas-wrap">
+      <canvas></canvas>
+      <div class="wrapper">
+        <h1 id="overlay">Eye movement desensitization and reprocessing</h1>
 
         <!--<h2 id="overlay">EMDR</h2>  remove or put below h1-->
-        </div>
-            <div class="range">
-        <div class="sliderValue">
-          <span>50</span>
-        </div>
-        <div class="field">
-          <div class="value left">0</div> 
-            <input 
-                type="range" 
-                id="myRange" 
-                min="10" 
-                max="30" 
-                value="20" 
-                steps="10"
+
+        <div class="range">
+          <div class="sliderValue">
+            <span>50</span>
+          </div>
+          <div class="field">
+            <div class="value left">0</div>
+            <input
+              type="range"
+              id="myRange"
+              min="10"
+              max="30"
+              value="20"
+              steps="10"
             />
             <div class="value right">100</div>
-         </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
+    <!-- ^^^Slider^^^ !-->
 
-        <!-- ^^^Slider^^^ !-->
-
-        <style type="text/css">
-            canvas {
-                border: 1px solid black;
-                position: fixed;
-                background: rgb(39, 118, 163);
-            }
-            overlay {
-                position: relative;
-                top: 10px;              }
-            body {
-                margin: 0;
-
-                
-            }
-            </style>
-        </head>
-    <body> 
-        <!-- <canvas>Eye movement desensitization and reprocessing</canvas> !-->
-        <script src="emdr.js"></script>
-        
-         
-    
-    </body>
-</HTML>
-
+    <style type="text/css">
+      canvas {
+        border: 1px solid black;
+        position: fixed;
+        background: rgb(39, 118, 163);
+      }
+      overlay {
+        position: relative;
+        top: 10px;
+      }
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <canvas>Eye movement desensitization and reprocessing</canvas> !-->
+    <script src="emdr.js"></script>
+  </body>
+</html>
